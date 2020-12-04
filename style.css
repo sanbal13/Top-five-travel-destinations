@@ -1,0 +1,471 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* /* general */
+html {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-30 {
+  flex: 0 1 31%;
+}
+*/ .column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.padding {
+  padding: 1rem 0;
+}
+.margin {
+  margin: 1rem 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --primary: #476896;
+  --secondary: #3f3332;
+}
+img {
+  width: 5rem;
+}
+/* header */
+header {
+  /* position: absolute; */
+  top: 0;
+  width: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1em 0;
+  z-index: 5;
+  background: linear-gradient(to left bottom, #476896, rgba(42, 71, 116, 0.8));
+}
+
+.header-menu {
+  text-transform: uppercase;
+}
+.header-menu li {
+  margin-left: 1rem;
+  color: white;
+}
+h2,
+h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+header a {
+  color: white;
+}
+
+header a:hover {
+  color: #f9234d;
+  font-weight: 700;
+}
+
+.sub-menu-bar {
+  position: relative;
+}
+.sub-menu {
+  position: absolute;
+  transform: translateX(-70%);
+  top: 18px;
+  padding: 10px;
+  text-align: center;
+  display: none;
+  border-radius: 0 5px 10px 0 blue;
+  z-index: 100000;
+  border-radius: 5px;
+  background-color: rgba(42, 71, 116, 0.7);
+}
+.sub-menu li {
+  margin-bottom: 5px;
+  color: aliceblue;
+}
+.sub-menu-bar:hover .sub-menu {
+  display: inline-block;
+}
+.date {
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(144, 212, 123);
+}
+
+/* body */
+main {
+  /* position: relative; */
+}
+.hero {
+  width: 100vw;
+  padding: 1.5rem 0;
+  background: linear-gradient(
+    to left bottom,
+    #476896,
+    rgba(42, 71, 116, 0.8),
+    rgba(33, 27, 27, 0.7),
+    #3f3332
+  );
+  padding-top: 5rem;
+}
+.city {
+  color: rgb(218, 129, 129);
+  font-weight: 500;
+  height: 18rem;
+
+  box-sizing: border-box;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+
+  text-align: center;
+  position: relative;
+}
+
+.mumbai {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/mum-bg.webp");
+  background-size: cover;
+}
+.mumbai:hover {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("img/mum-bg.webp");
+  background-size: cover;
+}
+
+.delhi {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("img/delh-bg.jpg");
+  background-size: cover;
+}
+.delhi:hover {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("img/delh-bg.jpg");
+  background-size: cover;
+}
+
+.jaipur {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("img/jaipur-bg.jpg");
+  background-size: cover;
+}
+.jaipur:hover {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("img/jaipur-bg.jpg");
+  background-size: cover;
+  flex: 0 1 35%;
+}
+.kolkata {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/kolkata_bg.jpeg");
+  background-size: cover;
+}
+.kolkata:hover {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("img/kolkata_bg.jpeg");
+  background-size: cover;
+}
+.bangalore {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/bangalore_bg.jpg");
+  background-size: cover;
+}
+.bangalore:hover {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("img/bangalore_bg.jpg");
+  background-size: cover;
+}
+.up {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/UP_bg.jpeg");
+  background-size: cover;
+}
+.up:hover {
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("img/UP_bg.jpeg");
+  background-size: cover;
+}
+.city p {
+  font-size: 0.9rem;
+  color: rgb(68, 5, 21);
+}
+h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0 0.5rem 0;
+  color: #f9234d;
+}
+.img {
+  background-color: rgba(235, 17, 10, 0.8);
+
+  width: 5rem;
+  height: 5rem;
+  margin-top: 5rem;
+  position: absolute;
+  /* bottom: -1.2rem;
+  left: 7rem; */
+  left: 40%;
+  bottom: -8%;
+}
+.golden {
+  width: 80%;
+}
+.img:hover {
+  background-color: green;
+}
+.fab {
+  margin-left: 2rem;
+  color: white;
+}
+.footer {
+  color: white;
+  margin-top: 3rem;
+}
+
+/* gallery */
+
+.mum-gallery img {
+  width: 100%;
+  height: 11rem;
+  margin-bottom: 1rem;
+  border-radius: 0.1rem;
+  box-shadow: 1px 1px 12px 1px rgb(18, 6, 82);
+}
+
+/* media querie */
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  .flex-30 {
+    flex: 1 1 100%;
+  }
+  .horizontal {
+    flex-direction: column;
+  }
+  .mum-gallery {
+    text-align: center;
+  }
+  .mum-gallery img {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  .flex-30 {
+    flex: 1 1 100%;
+  }
+  .horizontal {
+    flex-direction: column;
+  }
+  .mum-gallery img {
+    width: 80%;
+  }
+}

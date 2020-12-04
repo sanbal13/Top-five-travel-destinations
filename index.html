@@ -1,15 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/7f5cab6c93.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/stylesheet/style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <title>Travel</title>
+    <script
+      src="https://kit.fontawesome.com/c91808f2e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <div class="container flex">
+        <h2>Travel</h2>
+
+        <div>
+          <p class="date"></p>
+        </div>
+        <nav class="header-menu">
+          <ul class="flex">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="sub-menu-bar">
+              <a href="gallery.html">Cities</a>
+              <i class="far fa-caret-down"></i>
+              <ul class="sub-menu">
+                <li>
+                  <a href="mumbai.html"> Mumbai </a>
+                </li>
+                <li>
+                  <a href="delhi.html"> Delhi </a>
+                </li>
+                <li>
+                  <a href="kolkata.html"> Kolkata </a>
+                </li>
+                <li>
+                  <a href="bangalore.html"> Bangalore </a>
+                </li>
+                <li>
+                  <a href="jaipur.html"> Jaipur </a>
+                </li>
+                <li>
+                  <a href="amritsar.html"> Amritsar </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container flex">
+          <a class="flex-30" href="mumbai.html">
+            <article class="city mumbai">
+              <h3>MUMBAI</h3>
+              <p>Dream City of India</p>
+              <div class="img">
+                <img class="mum" src="img/mumbai.webp" alt="Mumbai" />
+              </div>
+            </article>
+          </a>
+
+          <a class="flex-30" href="delhi.html">
+            <article class="city delhi">
+              <h3>DELHI</h3>
+              <p>Capital of India</p>
+              <div class="img">
+                <img class="mum" src="img/delhi.webp" alt="Delhi" />
+              </div>
+            </article>
+          </a>
+
+          <a class="flex-30" href="jaipur.html">
+            <article class="city jaipur">
+              <h3>JAIPUR</h3>
+              <p>Pink City of India</p>
+              <div class="img">
+                <img class="mum" src="img/jaipur.webp" alt="Jaipur" />
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="container flex">
+          <a class="flex-30" href="kolkata.html">
+            <article class="city kolkata">
+              <h3>KOLKATA</h3>
+              <p>Oldest city of India</p>
+              <div class="img">
+                <img class="mum" src="img/kolk.png" alt="KOLKATA" />
+              </div>
+            </article>
+          </a>
+
+          <a class="flex-30" href="bangalore.html">
+            <article class="city bangalore">
+              <h3>BANGALORE</h3>
+              <p>silicon valley of India</p>
+              <div class="img">
+                <img class="mum" src="img/bangalore.png" alt="BANGALORE" />
+              </div>
+            </article>
+          </a>
+
+          <a class="flex-30" href="amritsar.html">
+            <article class="city up">
+              <h3>Amritsar</h3>
+              <p>Heartland of India</p>
+              <div class="img">
+                <img class="golden" src="img/golden.png" alt="Amritsar" />
+              </div>
+            </article>
+          </a>
+        </div>
+        <div class="container flex item-center footer">
+          <div>
+            <span>&copy; 2020</span>
+          </div>
+          <nav>
+            <ul class="flex">
+              <li>
+                <a href="https://facebook.com" target="_blank">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+
+  <footer></footer>
 </html>
