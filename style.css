@@ -148,7 +148,7 @@ html {
 .flex-30 {
   flex: 0 1 31%;
 }
-*/ .column {
+ .column {
   display: flex;
   flex-direction: column;
 }
@@ -180,11 +180,14 @@ a {
 img {
   width: 5rem;
 }
+.vertical-full {
+  height: 100vh;
+}
 /* header */
-header {
+.header-main {
   /* position: absolute; */
   top: 0;
-  width: 100;
+  width: 100vw;
   bottom: 0;
   left: 0;
   right: 0;
@@ -212,7 +215,7 @@ header a {
 
 header a:hover {
   color: #f9234d;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .sub-menu-bar {
